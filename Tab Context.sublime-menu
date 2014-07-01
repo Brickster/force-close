@@ -1,0 +1,4 @@
+[
+    { "caption": "-", "id":"custom"},
+    { "command":"force_close_view", "caption":"Force Close", "args": { "group": -1, "index": -1 } }
+]
