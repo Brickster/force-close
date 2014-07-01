@@ -16,7 +16,7 @@ Right-click a tab and select `Force Close`.
 - If the tab has unsaved changes, the tab is saved and closed.
 - If no changes exist, the tab is closed.
 
-Alternatively, you can send the command `force_close_tab` to a `sublime.Window` object with the arguments `group` and `index` for the tab you want closed. If not supplied, the currently active view will be closed.
+Alternatively, you can send the command `force_close_view` to a `sublime.Window` object with the arguments `group` and `index` for the tab you want closed. If not supplied, the currently active view will be closed.
 
 ## Compatibility
 
