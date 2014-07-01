@@ -4,6 +4,10 @@ ForceClose is a [Sublime Text][] plugin that adds the ability to close a tab wit
 
 [Sublime Text]: http://www.sublimetext.com
 
+## Why
+
+Sublime Text has built in commands `save` and `close_by_index` that save and close a view, respectively. However, `close_by_index` will prompt to save changes if they exist. What if you don't care?
+
 ## Use
 
 Right-click a tab and select `Force Close`. If the tab had never been saved, the changes are discarded and the tab is closed. If the tab had unsaved changes, the tab is saved and closed. If no changes exist, the tab is closed.
