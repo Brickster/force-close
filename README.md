@@ -1,6 +1,6 @@
 # ForceClose
 
-ForceClose is a [Sublime Text][] plugin that adds the ability to close a tab without prompting if unsaved changes exist.
+ForceClose is a [Sublime Text][] plugin that adds the ability to close a tab without prompting to save changes.
 
 [Sublime Text]: http://www.sublimetext.com
 
