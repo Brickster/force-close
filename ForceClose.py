@@ -19,26 +19,7 @@ class ForceCloseViewCommand(sublime_plugin.WindowCommand):
         if the_view != None:
             file_name = the_view.file_name()
             if file_name == None:
-                the_view.run_command('force_close_text_clear')
+                the_view.set_scratch(True)
             else:
                 the_view.run_command('save')
             self.window.run_command('close_by_index', {"group": group, "index": index})
-
-class ForceCloseTextClearCommand(sublime_plugin.TextCommand):
-    '''Clears all text from the view.
-
-    This command exists because erase(...) requires an Edit object and they are not user creatable nor available from a WindowCommand.'''
-
-    def description(self):
-        return 'Clears all text from the view'
-
-    def run(self, edit):
-        '''Clears all text'''
-
-        self.view.erase(edit, sublime.Region(0, self.view.size()))
-
-    def is_visible(self):
-        return False
-
-    def is_enabled(self):
-        return True
