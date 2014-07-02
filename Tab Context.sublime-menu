@@ -1,4 +1,4 @@
 [
     { "caption": "-", "id":"custom"},
-    { "command":"force_close_view", "caption":"Force Close", "args": { "group": -1, "index": -1 } }
+    { "command":"force_close_by_index", "caption":"Force Close", "args": { "group": -1, "index": -1 } }
 ]

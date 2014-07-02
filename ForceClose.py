@@ -2,7 +2,7 @@ from os.path import exists
 
 import sublime, sublime_plugin
 
-class ForceCloseViewCommand(sublime_plugin.WindowCommand):
+class ForceCloseByIndexCommand(sublime_plugin.WindowCommand):
 
     def run(self, group = -1, index = -1):
         '''Force closes a view.
