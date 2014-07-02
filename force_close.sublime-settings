@@ -1,0 +1,9 @@
+{
+    // if a view has a corresponding file associated with it when force closed, save any pending changes
+    "save_when_possible":true,
+
+    // if a view had once been saved but it's corresponding file is missing (moved/deleted/vacation), it becomes orphaned.
+    // True corresponds with Sublime Text's default implementation, save will recreate the underlying file. False discards the view
+    // as if no file ever existed for the view.
+    "save_orphaned_views":false
+}
