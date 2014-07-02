@@ -16,7 +16,7 @@ Alternatively, you can send the command `force_close_view` to a `sublime.Window`
 
 ## Settings
 
-`save_when_possible`: if true, unsaved changes are kept; else, they are discarded. This only applies to views that are not orphans.
+`save_when_possible`: if true, unsaved changes are kept; else, they are discarded. This only applies to views that are not orphans.  
 `save_orphaned_views`: if true, an orphaned view's file is recreated; else, the view is discarded.
 
 ## Compatibility
