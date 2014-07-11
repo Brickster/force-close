@@ -1,6 +1,7 @@
 from os.path import exists
 
-import sublime, sublime_plugin
+import sublime
+import sublime_plugin
 
 class ForceCloseByIndexCommand(sublime_plugin.WindowCommand):
 
