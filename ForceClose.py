@@ -5,10 +5,11 @@ import sublime, sublime_plugin
 class ForceCloseByIndexCommand(sublime_plugin.WindowCommand):
 
     def run(self, group = -1, index = -1):
-        '''Force closes a view.
+        """Force closes a view.
 
         If the view has an underlying file, it is saved, then closed. If it doesn't, the file is cleared then closed. Losing all progress.
-        If either the view group or index is not specified, the active view is used.'''
+        If either the view group or index is not specified, the active view is used.
+        """
 
         if group == -1 or index == -1:
             the_view = self.window.active_view()
