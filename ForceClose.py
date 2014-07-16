@@ -18,11 +18,11 @@ class ForceCloseByIndexCommand(sublime_plugin.WindowCommand):
         else:
             the_view = next((view for view in self.window.views_in_group(group) if self.window.get_view_index(view) == (group, index)), None)
 
-        if the_view != None:
+        if the_view is not None:
 
             settings = sublime.load_settings('force_close.sublime-settings')
 
-            has_file = the_view.file_name() != None
+            has_file = the_view.file_name() is not None
             should_save = the_view.is_dirty() and has_file and settings.get('save_when_possible')
             is_orphan = has_file and not exists(the_view.file_name())
 
