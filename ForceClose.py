@@ -3,9 +3,10 @@ from os.path import exists
 import sublime
 import sublime_plugin
 
+
 class ForceCloseByIndexCommand(sublime_plugin.WindowCommand):
 
-    def run(self, group = -1, index = -1):
+    def run(self, group=-1, index=-1):
         """Force closes a view.
 
         If the view has an underlying file, it is saved, then closed. If it doesn't, the file is cleared then closed. Losing all progress.
