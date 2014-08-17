@@ -1,0 +1,40 @@
+[
+    {
+        "caption": "Preferences",
+        "mnemonic": "n",
+        "id": "preferences",
+        "children":
+        [
+            {
+                "caption": "Package Settings",
+                "mnemonic": "P",
+                "id": "package-settings",
+                "children":
+                [
+                    {
+                        "caption": "ForceClose",
+                        "children":
+                        [
+                            {
+                                "command": "open_file",
+                                "args": {"file": "${packages}/ForceClose/README.md"},
+                                "caption": "README"
+                            },
+                            { "caption": "-" },
+                            {
+                                "command": "open_file",
+                                "args": {"file": "${packages}/ForceClose/ForceClose.sublime-settings"},
+                                "caption": "ForceClose – Default"
+                            },
+                            {
+                                "command": "open_file",
+                                "args": {"file": "${packages}/User/ForceClose.sublime-settings"},
+                                "caption": "ForceClose – User"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
